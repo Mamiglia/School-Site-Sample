@@ -54,6 +54,7 @@ html, body, .bigtitle{
   background-size: cover;
 }
 .bigtitle h1 {
+  padding-top: 4em;
   font-size: 5em;
   text-align: center;
   color: white;
