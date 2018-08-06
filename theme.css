@@ -21,9 +21,10 @@ a {
   z-index: 2;
 }
 .header img {
-  max-width: 4%;
-  padding-left: 2%;
-  flex-grow: 3;
+  object-fit: contain;
+  width: 20%;
+  height: 100%;
+  flex-grow: 0.1;
 }
 .header h3 {
   margin-left: 1em;
@@ -67,4 +68,20 @@ html, body{
   font-size: 4em;
   text-align: center;
   color: white;
+}
+.main {
+  margin: auto;
+  width: 80%;
+  display: grid;
+  grid-template: 50% 50% / 1fr 2fr;
+  overflow: hidden;
+}
+.main #contacts {
+  grid-area: 1 / 1 / span 1 / span 2;
+}
+.main #greets {
+  grid-area: 1 / 2 / span 1 / span 1;
+}
+.main #comunications {
+  grid-area: 2 / 2 / span 1 / span 1;
 }
