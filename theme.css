@@ -79,13 +79,32 @@ html, body{
 }
 .main #contacts {
   grid-area: 1 / 1 / span 2 / span 1;
+  padding: 1em;
+  background: #f1f1f1;
+}
+.main #contacts p {
+  text-align: right;
+}
+.main #contacts h1 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.main #contacts a {
+  text-align: center;
+
+}
+.main #contacts .infocontact {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 .main #contacts .social img {
   width: 3em;
 }
 .main #greets {
+  margin: 1em;
   grid-area: 1 / 2 / span 1 / span 1;
 }
 .main #comunications {
+  margin: 1em;
   grid-area: 2 / 2 / span 1 / span 1;
 }
