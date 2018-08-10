@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Righteous|Roboto|Varela+Round');
+@keyframes pulse {
+  from {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -152,6 +165,11 @@ html, body{
   margin: 1em;
   color: white;
   font-size: 1.3em;
+  transition: font-size 0.1s linear;
+
+}
+.bigtitle .frontground .nav a:hover {
+  font-size: 1.5em;
 }
 .bigtitle .frontground h1 {
   font-family: 'Varela Round', sans-serif;
@@ -159,25 +177,13 @@ html, body{
   text-align: center;
   color: white;
 }
-@keyframes pulse {
-  from {
-    transform: scale3d(1, 1, 1);
-  }
-
-  50% {
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-
-  to {
-    transform: scale3d(1, 1, 1);
-  }
-}
-.bigtitle .frontground a {
+.bigtitle .frontground>a {
+  width: 3%;
+  margin-bottom: 1.3em;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
   animation-name: pulse;
-  width: 3%;
-  margin-bottom: 1.3em;
+  animation-duration: 3s;
 }
 .bigtitle .frontground a img {
   width: 100%;
