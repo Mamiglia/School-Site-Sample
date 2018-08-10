@@ -59,7 +59,7 @@ a {
   overflow: hidden;
   width: 100%;
   height: 0;
-  transition: .7s ease;
+  transition: .5s ease;
 }
 .header .RE a .overlay p {
   text-align: center;
@@ -149,29 +149,42 @@ html, body{
 }
 .bigtitle .frontground .RE {
   position: absolute;
-  top: 0;
-  right:0;
-  margin: 1em;
-  width: 5%;
+  top: 1em;
+  right: 1em;
+  width: 10%;
 }
 .bigtitle .frontground .RE img {
-  -webkit-filter: brightness(80%);
-  filter: brightness(80%);
-  width: 100%;
-}
-.bigtitle .frontground .RE h3 {
-  color: white;
-  background-color: black;
-  font-size: 1.5em;
-  height: 0;
+
+  opacity: 0.6;
+  width: 80%;
   transition: 0.5s ease;
-  overflow: hidden;
+
+}
+.bigtitle .frontground .RE a {
+  display: block;
+  position: relative;
+  top: -2em;
+  opacity: 0;
+  font-size: 1.3em;
+  transition: 0.5s ease;
+  background-color: #64646483;
+  padding: 0.5em;
+  margin: 0.2em;
+  border-radius: 10px; 
+}
+.bigtitle .frontground .RE a h3 {
+  color: white;
 }
 .bigtitle .frontground .RE:hover img {
-  background-color: gray;
+  transform: scale(1.3);
+  opacity: 1;
 }
-.bigtitle .frontground .RE:hover h3 {
-  height: 100%;
+.bigtitle .frontground .RE:hover a {
+  opacity: 1;
+  transform: translateY(2em)
+}
+.bigtitle .frontground .RE:hover a:hover {
+  background-color: dodgerblue;
 }
 .bigtitle .frontground .nav {
   border-bottom: 1px;
