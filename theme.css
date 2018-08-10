@@ -66,7 +66,7 @@ a {
   margin-top: 33%;
   margin-bottom:auto;
   color: white;
-
+  font-size: 1.2em;
 }
 .header .RE a .teach {
   bottom: 5%;
@@ -147,14 +147,31 @@ html, body{
   width: 10%;
   filter: invert(100%);
 }
-.bigtitle .frontground [alt="RE Logo"] {
+.bigtitle .frontground .RE {
   position: absolute;
-  -webkit-filter: brightness(80%);
-  filter: brightness(80%);
   top: 0;
   right:0;
   margin: 1em;
   width: 5%;
+}
+.bigtitle .frontground .RE img {
+  -webkit-filter: brightness(80%);
+  filter: brightness(80%);
+  width: 100%;
+}
+.bigtitle .frontground .RE h3 {
+  color: white;
+  background-color: black;
+  font-size: 1.5em;
+  height: 0;
+  transition: 0.5s ease;
+  overflow: hidden;
+}
+.bigtitle .frontground .RE:hover img {
+  background-color: gray;
+}
+.bigtitle .frontground .RE:hover h3 {
+  height: 100%;
 }
 .bigtitle .frontground .nav {
   border-bottom: 1px;
@@ -166,7 +183,6 @@ html, body{
   color: white;
   font-size: 1.3em;
   transition: font-size 0.1s linear;
-
 }
 .bigtitle .frontground .nav a:hover {
   font-size: 1.5em;
