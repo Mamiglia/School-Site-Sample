@@ -103,7 +103,7 @@ a {
   margin-bottom: auto;
 }
 .header>a:hover {
-  border-radius: 4px;
+  border-radius: 8px;
   background-color: #ddd;
   color: black;
 }
@@ -169,7 +169,7 @@ html, body{
   background-color: #64646483;
   padding: 0.5em;
   margin: 0.2em;
-  border-radius: 10px; 
+  border-radius: 8px; 
 }
 .bigtitle .frontground .RE a h3 {
   color: white;
@@ -221,7 +221,7 @@ html, body{
 }
 #main {
   padding-top: 7em; /* to fix anchor element*/
-  margin: 4em auto auto auto;
+  margin: 4em auto 4em auto;
   width: 90%;
   display: grid;
   grid-template: auto auto / 1fr 2.5fr;
@@ -235,6 +235,9 @@ html, body{
   border-top-width: 7em;
   padding: 1em; /* to fix anchor element*/
   background: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 #main #contacts p {
   text-align: right;
@@ -243,16 +246,50 @@ html, body{
   text-align: center;
   margin-bottom: 1em;
 }
+#main #contacts h4 {
+  display: inline-block;
+}
 #main #contacts a {
+  display: block;
+  align-self: center;
   text-align: center;
   margin: auto;
 }
-#main #contacts .infocontact {
-  margin-top: 2em;
-  margin-bottom: 2em;
+#main #contacts .infocontact p i {
+  font-size:1em;
+  transition: .4s ease;
 }
-#main #contacts img {
-  width: 3em;
+#main #contacts a[alt="Farnesina Map"] img{
+  width: 100%;
+  border-style: solid;
+  border-color: #cfcfcf;
+
+}
+#main #contacts .infocontact {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+#main #contacts .infocontact a:hover p {
+  text-decoration: underline;
+}
+#main #contacts .infocontact a:hover p i{
+  transform: translateY(0.3em);
+  color: dodgerblue;
+}
+#main #contacts a img {
+  width: 20%;
+}
+#main #contacts .social {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+  
+}
+#main #contacts .social a {
+ width: 25%;
+}
+#main #contacts .social a img {
+  width: 70%;
 }
 #main #greets {
   padding-top: 7em; /* to fix anchor element*/
