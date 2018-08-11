@@ -154,7 +154,6 @@ html, body{
   width: 10%;
 }
 .bigtitle .frontground .RE img {
-
   opacity: 0.6;
   width: 80%;
   transition: 0.5s ease;
@@ -165,7 +164,7 @@ html, body{
   position: relative;
   top: -2em;
   opacity: 0;
-  font-size: 1.3em;
+  font-size: 1.1em;
   transition: 0.5s ease;
   background-color: #64646483;
   padding: 0.5em;
@@ -174,6 +173,7 @@ html, body{
 }
 .bigtitle .frontground .RE a h3 {
   color: white;
+  text-align: center;
 }
 .bigtitle .frontground .RE:hover img {
   transform: scale(1.3);
@@ -220,7 +220,8 @@ html, body{
   filter: brightness(80%);
 }
 #main {
-  margin: 10% auto auto auto;
+  padding-top: 7em; /* to fix anchor element*/
+  margin: 4em auto auto auto;
   width: 90%;
   display: grid;
   grid-template: auto auto / 1fr 2.5fr;
@@ -228,7 +229,11 @@ html, body{
 }
 #main #contacts {
   grid-area: 1 / 1 / span 2 / span 1;
-  padding: 1em;
+  margin-top: -7em;
+  border-top-style: solid;
+  border-color: white;
+  border-top-width: 7em;
+  padding: 1em; /* to fix anchor element*/
   background: #f1f1f1;
 }
 #main #contacts p {
@@ -250,13 +255,16 @@ html, body{
   width: 3em;
 }
 #main #greets {
-  margin: 1em;
+  padding-top: 7em; /* to fix anchor element*/
+  margin: -6em 1em 1em 1em;
   grid-area: 1 / 2 / span 1 / span 1;
 }
 #main #comunications {
-  margin: 1em;
+  padding-top: 7em; /* to fix anchor element*/
+  margin: -6em 1em 1em 1em;
   grid-area: 2 / 2 / span 1 / span 1;
 }
 .footer {
+  background-color: #f1f1f1;
   height: 3000px;
 }
