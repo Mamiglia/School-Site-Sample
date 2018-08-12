@@ -399,12 +399,39 @@ html, body{
   justify-content: space-around;
   margin-top: 2em;
 }
-#main #greets .buttons h2 {
+#main #greets .buttons div {
+  position: relative;
+}
+#main #greets .buttons div h2 {
   border-radius: 8px;
   background-color: #f1f1f1;
   padding: 0.5em 1em;
   font-size: 1.15em;
+  text-align: center;
 }
+#main #greets .buttons .bt a  {
+  display: block;
+  pointer-events: none;
+  text-align: center;
+  opacity: 0;
+  transition: .4s ease;
+  line-height: 1.8em;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+  margin: 0.6em 0.6em 0.6em 0.6em;
+  padding: 0.5em;
+  font-size: 0.8em;
+}
+#main #greets .buttons .bt:hover a {
+  opacity: 1;
+  transform: translateY(0.4em);
+  pointer-events: auto;
+}
+#main #greets .buttons .bt:hover a:hover, #main #greets .buttons .bt h2:hover, #main #greets .buttons .single h2:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
 #main #comunications {
   padding-top: 7em; /* to fix anchor element*/
   margin: -6em 1em 1em 1em;
@@ -413,5 +440,11 @@ html, body{
 
 .footer {
   background-color: #f1f1f1;
-  height: 3000px;
+  text-align: right;
+  padding-top: 3em;
+}
+@media only screen and (max-width: 600px) {
+  .bigtitle .frontground .nav {
+    display: none;
+  }
 }
