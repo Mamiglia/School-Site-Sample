@@ -444,7 +444,30 @@ html, body{
   padding-top: 3em;
 }
 @media only screen and (max-width: 600px) {
+  .header a {
+    display: none;
+
+  }
   .bigtitle .frontground .nav {
     display: none;
+  }
+  .bigtitle .frontground {
+    font-size: 80%;
+  }
+  .bigtitle .frontground .RE {
+    display: none;
+  }
+  #main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #main #greets .buttons {
+    display: none;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .bigtitle .frontground {
+    font-size: 70%;
   }
 }
