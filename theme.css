@@ -394,6 +394,17 @@ html, body{
 #main #greets p {
   line-height: 1.9em;
 }
+#main #greets .buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2em;
+}
+#main #greets .buttons h2 {
+  border-radius: 8px;
+  background-color: #f1f1f1;
+  padding: 0.5em 1em;
+  font-size: 1.15em;
+}
 #main #comunications {
   padding-top: 7em; /* to fix anchor element*/
   margin: -6em 1em 1em 1em;
