@@ -28,7 +28,7 @@ a {
   position: fixed;
   top: 0px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   z-index: 4;
 }
 .header img {
@@ -42,50 +42,44 @@ a {
   min-width: 4em;
 }
 .header .RE {
-  flex-grow: 0.5;
+  position: relative;
   height: 5em;
-  display: flex;
+  margin-right: 2em;
+}
+.header .RE img {
+  filter: invert(75%);
+  -webkit-filter: invert(75%);
+  height: 3em;
+  margin: 1em;
+  transition: .4s ease;
 }
 .header .RE a {
-  display: flex; justify-content: center;
-  position: relative;
-  width: 50%;
-  padding: 5%;
-  padding-bottom: 0px;
-  height: 90%;
-}
-.header .RE a .overlay {
-  position: absolute;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
-}
-.header .RE a .overlay p {
   text-align: center;
-  margin-top: 33%;
-  margin-bottom:auto;
+  opacity: 0;
+  display: block;
+  position: relative;
+  top: -1em;
+  transition: .5s ease;
+  background: #b8b8b8af;
+  border-radius: 8px;
+  margin-bottom: 0.3em;
+  padding: 0.5em;
+}
+.header .RE a p {
   color: white;
-  font-size: 1.2em;
+  line-height: 1.5em; 
 }
-.header .RE a .teach {
-  bottom: 5%;
-  right: 0;
-  left: 0;
-  background-color: #b36d12;
+.header .RE:hover img {
+  transform: scale(1.2);
 }
-.header .RE a .fam {
-  top: 0;
-  right: 0;
-  left:0;
-  background-color: #299c1a;
+.header .RE:hover a{
+  transform: translateY(1em);
+  opacity: 1;
+  pointer-events: all;
 }
-.header a:hover .overlay {
-  height: 95%;
-}
-.header .RE a img {
-  height: inherit;
-  width: 5em;
+.header .RE:hover a:hover {
+  background-color: dodgerblue;
+  pointer-events: all;
 }
 .header .menu {
   display: none;
