@@ -6,6 +6,21 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script>
+          $(document).ready(function(){
+            $(".hamburger").click(function(){
+              $(this).toggleClass("is_active");
+              $(".openmenu").toggleClass("is_active");
+            });
+          });
+          $(document).ready(function(){
+            $(".openmenu a").click(function(){
+              $(".hamburger").toggleClass("is_active");
+              $(".openmenu").toggleClass("is_active");
+            });
+          });
+        </script>
     </head>
     <body>
       <div class="header">
@@ -21,6 +36,7 @@
         </div>
         <div class="menu">
           <div class="hamburger" id="hamburger-1">
+            <!--Logo and animations by https://codepen.io/RRoberts/-->
             <span class="line"></span>
             <span class="line"></span>
             <span class="line"></span>
