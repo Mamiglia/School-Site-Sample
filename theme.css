@@ -295,9 +295,10 @@ html, body{
   margin: .5em;
   transition: .4s ease;
 }
-#main #contacts .common_info .timetable:hover h5{
+#main #contacts .common_info .timetable:hover h5, #main #contacts .common_info .timetable:active h5{
   background-color: dodgerblue;
   color: white;
+  cursor: pointer;
 }
 #main #contacts .common_info .timetable:hover p {
   background-color: #d6d6d6;
@@ -403,6 +404,7 @@ html, body{
   padding: 0.5em 1em;
   font-size: 1.15em;
   text-align: center;
+  cursor: pointer;
 }
 #main #greets .buttons .bt div {
   position: absolute;
@@ -458,6 +460,47 @@ html, body{
     justify-content: center;
     align-items: center;
 
+  }
+  .row .three{
+    padding: 80px 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+  }
+  
+  .hamburger .line{
+    width: 50px;
+    height: 5px;
+    background-color: #ecf0f1;
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hamburger:hover{
+    cursor: pointer;
+  }
+  .header .menu #hamburger-1:hover .line:nth-child(2) .header .menu #hamburger-1:active .line:nth-child(2){
+    opacity: 0;
+  }
+  
+  #hamburger-1.is-active .line:nth-child(1){
+    -webkit-transform: translateY(13px) rotate(45deg);
+    -ms-transform: translateY(13px) rotate(45deg);
+    -o-transform: translateY(13px) rotate(45deg);
+    transform: translateY(13px) rotate(45deg);
+  }
+  
+  #hamburger-1.is-active .line:nth-child(3){
+    -webkit-transform: translateY(-13px) rotate(-45deg);
+    -ms-transform: translateY(-13px) rotate(-45deg);
+    -o-transform: translateY(-13px) rotate(-45deg);
+    transform: translateY(-13px) rotate(-45deg);
   }
   .header .menu img{
     margin-right: 1em;
