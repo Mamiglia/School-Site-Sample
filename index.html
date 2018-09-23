@@ -10,22 +10,6 @@
         <meta name="keywords" content="School,Farnesina,Liceo,Scientifico,Musicale">
         <meta name="description" content="Pagina del Liceo Farnesina">
         <meta name="author" content="Matteo Migliarini">
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script>
-          $(document).ready(function(){
-            $(".hamburger").click(function(){
-              $(this).toggleClass("is_active");
-              $(".openmenu").toggleClass("is_active");
-            });
-          });
-          $(document).ready(function(){
-            $(".openmenu a").click(function(){
-              $(".hamburger").toggleClass("is_active");
-              $(".openmenu").toggleClass("is_active");
-            });
-          });
-        </script>
     </head>
     <body>
       <div class="header">
@@ -40,13 +24,13 @@
           <a href="https://www.sissiweb.it/Secret/REStart.aspx?Customer_ID=05723890587" target="_blank"><p>Docenti</p></a>
         </div>
         <div class="menu">
-          <div class="hamburger" id="hamburger-1">
+          <div class="hamburger" id="hamburger-1" onclick="dropMenu()">
             <!--Logo and animations by https://codepen.io/RRoberts/-->
             <span class="line"></span>
             <span class="line"></span>
             <span class="line"></span>
           </div>
-          <div class="openmenu">
+          <div class="openmenu" id="to_drop">
             <a href="#greets"><h3>Chi Siamo</h3></a>
             <a href="#comunications"><h3>Circolari</h3></a>
             <a href="#contacts"><h3>Contatti</h3></a>
@@ -154,4 +138,12 @@
         <p>GNU GPL License 3.0, Matteo Migliarini 2018</p>
       </div>
     </body>
+    <script>
+      var to_drop = document.getElementById('to_drop');
+      var hamburger = document.getElementById("hamburger-1");
+      function dropMenu() {
+        hamburger.classList.toggle('is_active');
+        to_drop.classList.toggle('is_active');
+      };
+    </script>
 </html>
