@@ -100,7 +100,7 @@ class News extends React.Component {
         <div className={this.state.visibility + " body"}>
           <h5>{this.props.file.date}</h5>
           <p>{this.props.file.text}</p>
-          <a href={this.props.file.download} target="__blank">Download</a>
+          <a href={this.props.file.download} target="__blank"><i className="material-icons">file_download</i>Download</a>
         </div>
       </div>
     );
