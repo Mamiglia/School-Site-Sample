@@ -59,11 +59,12 @@ a {
   display: block;
   position: relative;
   top: -1em;
+  box-sizing: border-box;
+  height: 0;
+  overflow: hidden;
   transition: .5s ease;
   background: #b8b8b8af;
   border-radius: 8px;
-  margin-bottom: 0.3em;
-  padding: 0.5em;
 }
 .header .RE a p {
   color: white;
@@ -74,8 +75,12 @@ a {
 }
 .header .RE:hover a{
   transform: translateY(1em);
+  height: auto;
   opacity: 1;
+  border-bottom: 0.3em;
+  padding: 0.5em;
   pointer-events: all;
+  overflow: visible;
 }
 .header .RE:hover a:hover {
   background-color: dodgerblue;
@@ -417,6 +422,8 @@ html, body{
 }
 #main #greets .buttons .bt:hover div {
   height: auto;
+  overflow: visible;
+
 }
 #main #greets .buttons .bt a  {
   display: block;
