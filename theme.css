@@ -596,9 +596,8 @@ html, body{
 }
 .news .front {
   align-items: center;
-
   width: inherit;
-  padding: 0.5em 0 0.5em 2em;
+  padding: 0.5em 0.5em 0.5em 1em;
   display: grid;
   grid-template-columns: 16% 70% 15%;
 }
