@@ -90,7 +90,7 @@ a {
   margin-left: 2em;
   margin-right: 2em;
   height: 3em;
-  font-size: 0.9em;
+  font-size: 0.7em;
   flex-grow: 1;
   text-align: center;
   max-width: 8em;
@@ -163,7 +163,6 @@ html, body{
   position: relative;
   top: -2em;
   opacity: 0;
-  font-size: 1.1em;
   transition: 0.5s ease;
   background-color: #64646483;
   padding: 0.5em;
@@ -173,6 +172,7 @@ html, body{
 .bigtitle .frontground .RE a h3 {
   color: white;
   text-align: center;
+  font-size: 0.75em;
 }
 .bigtitle .frontground .RE:hover img {
   transform: scale(1.3);
@@ -194,15 +194,15 @@ html, body{
 .bigtitle .frontground .nav a {
   margin: 1em;
   color: white;
-  font-size: 1.3em;
+  font-size: 1.05em;
   transition: font-size 0.1s linear;
 }
 .bigtitle .frontground .nav a:hover {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 .bigtitle .frontground h1 {
   font-family: 'Varela Round', sans-serif;
-  font-size: 4em;
+  font-size: 3.7em;
   text-align: center;
   color: white;
 }
@@ -228,6 +228,7 @@ html, body{
   grid-gap: 1em;
 }
 #main #contacts {
+  height: fit-content;
   grid-area: 1 / 1 / span 2 / span 1;
   margin-top: -7em;
   border-top-style: solid;
@@ -542,6 +543,7 @@ html, body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
   }
   #main #greets .buttons {
     flex-direction: column;
@@ -555,9 +557,107 @@ html, body{
     right: -100%;
     width: 100%;
   }
+  #main #comunications .news {
+    font-size: 0.7em;
+  }
+  #main #comunications .news .front {
+    grid-template-columns: 19% 67% 14%;
+
+    padding: 0.3em;
+    padding-right: 0.7em;
+  }
+  #main #comunications {
+    margin: -6em -1em 7.5em 0;
+  }
+  #main #comunications .news .body p {
+    font-size: 1.3em;
+    padding: 1em; 
+  }
 }
 @media only screen and (max-width: 390px) {
   .bigtitle .frontground {
     font-size: 70%;
   }
+}
+
+#main #comunications {
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+/*React elements style*/
+.news {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 45px;
+  background-color: #f1f1f1;
+  margin-bottom: 0.5em;
+}
+.news .front {
+  align-items: center;
+
+  width: inherit;
+  padding: 0.5em 0 0.5em 1em;
+  display: grid;
+  grid-template-columns: 16% 70% 15%;
+}
+.news .front h2 {
+  display: inline;
+  font-family: sans-serif;
+}
+.news .front h2.number {
+  grid-area: 1 / 1 / span 1 / span 1;
+}
+.news .front h2.name {
+  grid-area: 1 / 2 / span 1 / span 1;
+}
+.news .front i {
+  grid-area: 1 / 3 / span 1 / span 1;
+  align-self: center;
+  font-size: 3.5em;
+  transition: 0.4s ease;
+  cursor: pointer;
+  margin: auto;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+.news .front i:hover {
+  transform: scale(1.15);
+  color: dodgerblue;
+}
+.news .body {
+  width: inherit;
+}
+.news .body.collapsed {
+  overflow: hidden;
+  transition: 0.4s ease;
+  height: 0;
+}
+.news .body.expanded {
+  height: 19em;
+  overflow: auto;
+  transition: 0.5s ease;
+}
+.news .body h5 {
+  padding-left: 3em;
+}
+.news .body p {
+  padding: 2em;
+}
+.news .body a {
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.news .front i.expanded {
+  transform: rotate(180deg);
 }
