@@ -657,8 +657,17 @@ html, body{
   align-self: center;
   text-align: center;
   width: 100%;
+  transition: 0.1s ease;
+}
+.news .body a i {
+  transition: 0.1s ease;
+} 
+.news .body a:hover {
   background: #e2e2e2;
-  
+}
+.news .body a:hover i {
+  transform: translateY(0.2em);
+  color: dodgerblue;
 }
 .news .front i.expanded {
   transform: rotate(180deg);
