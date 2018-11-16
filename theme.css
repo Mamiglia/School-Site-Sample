@@ -398,6 +398,7 @@ html, body{
 }
 #main #greets .buttons div {
   position: relative;
+  margin-right: 0.5em;
 }
 #main #greets .buttons div h2 {
   border-radius: 8px;
@@ -631,6 +632,9 @@ html, body{
 }
 .news .body {
   width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .news .body.collapsed {
   overflow: hidden;
@@ -638,7 +642,7 @@ html, body{
   height: 0;
 }
 .news .body.expanded {
-  height: 19em;
+  max-height: 19em;
   overflow: auto;
   transition: 0.5s ease;
 }
@@ -649,13 +653,12 @@ html, body{
   padding: 2em;
 }
 .news .body a {
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+
+  align-self: center;
+  text-align: center;
+  width: 100%;
+  background: #e2e2e2;
+  
 }
 .news .front i.expanded {
   transform: rotate(180deg);
