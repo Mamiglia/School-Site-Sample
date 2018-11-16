@@ -411,6 +411,12 @@ html, body{
 #main #greets .buttons .bt div {
   position: absolute;
   width: 100%;
+  height: 0;
+  transition: 0.1s ease;
+  overflow: hidden;
+}
+#main #greets .buttons .bt:hover div {
+  height: auto;
 }
 #main #greets .buttons .bt a  {
   display: block;
