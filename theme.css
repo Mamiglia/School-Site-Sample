@@ -563,6 +563,9 @@ html, body{
 
   }
   #main #greets .buttons {
+    font-size: 85%;
+  }
+  #main #greets .buttons {
     flex-direction: column;
   }
   #main #greets .buttons div {
@@ -571,7 +574,7 @@ html, body{
   }
   #main #greets .buttons .bt div {
     top: -1em;
-    right: -100%;
+    right: -110%;
     width: 100%;
   }
   #main #comunications .news {
@@ -599,6 +602,9 @@ html, body{
   }
   #main #comunications .news .front {
     padding-right: 0.3em
+  }
+  #main #greets .buttons {
+    font-size: 63%;
   }
 }
 
