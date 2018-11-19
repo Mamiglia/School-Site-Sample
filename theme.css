@@ -354,7 +354,7 @@ html, body{
   width: 70%;  
 }
 #main #contacts :not(.map) a img:hover {
-  transform: translateY(-0.7em);
+  transform: translateY(-0.6em);
 }
 #main #contacts .map {
   overflow: hidden;
