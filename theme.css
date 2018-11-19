@@ -233,7 +233,9 @@ html, body{
   grid-gap: 1em;
 }
 #main #contacts {
+  max-height: 65em;
   height: fit-content;
+  height: -moz-fit-content;
   grid-area: 1 / 1 / span 2 / span 1;
   margin-top: -7em;
   border-top-style: solid;
@@ -650,14 +652,13 @@ html, body{
   justify-content: space-between;
 }
 .news .body.collapsed {
-  overflow: hidden;
-  transition: 0.4s ease;
+  transition: all 0.4s ease;
   height: 0;
 }
 .news .body.expanded {
   max-height: 19em;
   overflow: auto;
-  transition: 0.5s ease;
+  transition: all 0.4s ease;
 }
 .news .body h5 {
   padding-left: 3em;
