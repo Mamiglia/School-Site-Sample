@@ -576,6 +576,8 @@ html, body{
   }
   #main #comunications .news {
     font-size: 0.7em;
+    width: 100%;
+    margin-left: -0.8em
   }
   #main #comunications .news .front {
     grid-template-columns: 19% 67% 14%;
@@ -594,6 +596,9 @@ html, body{
 @media only screen and (max-width: 390px) {
   .bigtitle .frontground {
     font-size: 70%;
+  }
+  #main #comunications .news .front {
+    padding-right: 0.3em
   }
 }
 
