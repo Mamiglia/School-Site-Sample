@@ -462,7 +462,11 @@ html, body{
   text-align: right;
   padding-top: 3em;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
+  .bigtitle .background {
+    -webkit-filter: brightness(90%);
+    filter: brightness(90%);
+  }
   .header {
     flex-direction: flex-start;
     height: 4em;
